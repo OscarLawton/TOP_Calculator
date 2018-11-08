@@ -73,7 +73,9 @@ function main(){
         if (num === "0"){
 
             num = "1";
-
+            checkNumSize(num.toString(),outContent);
+            outContent.innerHTML = "" + num + "";
+            
         }
         else if (tooBig === false && num != "O"){ 
 
