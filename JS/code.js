@@ -75,7 +75,7 @@ function main(){
             num = "1";
             checkNumSize(num.toString(),outContent);
             outContent.innerHTML = "" + num + "";
-            
+
         }
         else if (tooBig === false && num != "O"){ 
 
@@ -316,29 +316,33 @@ function main(){
         }
         else{
 
-            checkNumSize(num,outContent);
+            
             num2 = Number(num);
             if(add === true){
 
                 num1 =  addition(num1, num2);
+                checkNumSize(num1.toString(),outContent);
                 outContent.innerHTML = "" + num1.toString() + "";
                 
             }
             else if (sub === true){
 
                 num1 = subtract(num1, num2) ;
+                checkNumSize(num1.toString(),outContent);
                 outContent.innerHTML = "" + num1.toString() + "";
                 
             }
             else if (multiplication === true){
 
                 num1 = multiply(num1,num2);
+                checkNumSize(num1.toString(),outContent);
                 outContent.innerHTML = "" + num1.toString() + "";
                 
             }
             else if (division === true){
 
                 num1 = divideFunc(num1,num2);
+                checkNumSize(num1.toString(),outContent);
                 outContent.innerHTML = "" + num1.toString() + "";
                
             }
@@ -474,7 +478,7 @@ function main(){
         if (clickedAlready === false){
 
             num1 = Number(num);
-            checkNumSize(num1,outContent);
+            checkNumSize(num1.toString(),outContent);
             outContent.innerHTML = "" + num1.toString() + "";
             tooBig = false;
             num = "0";
